@@ -101,7 +101,7 @@ void Hash::check_hash(int pos) {
     js_data.push_back(temp);
   }
 
-  std::this_thread::sleep_for(std::chrono::milliseconds((pos + 1) * 500)); //после флага задержка, чтобы остальные потоки поочередно записались
+  std::this_thread::sleep_for(std::chrono::milliseconds((pos + 1) * 500));
   std::cout << pos + 1 << " THREAD SAVED" << std::endl;
 
   if (pos == 0) {
