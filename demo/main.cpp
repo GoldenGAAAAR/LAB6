@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[]) {
   if (argc == 1) {
-    std::cout << "NO JSON FILE PATH" << std::endl;
+    std::cout << "NO  FILE PATH" << std::endl;
   } else if (argc == 2) {
     Hash hash(argv[1]);
     hash.start();
